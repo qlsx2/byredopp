@@ -12,6 +12,7 @@ $(function () {
     });
 
     var swiper = new Swiper(".main_best_slide", {
+        spaceBetween: 20,
         slidesPerView: '4',
         scrollbar: {
             el: ".swiper-scrollbar",
@@ -52,6 +53,7 @@ $(function () {
         }
 
     })
+
 })
 
 
@@ -61,16 +63,5 @@ $(function () {
         $('html,body').animate({ scrollTop: 0 }, 1000)
     })
 
-    $(window).on('scroll', function (e) {
-        console.log(e.originalEvent.deltaY)
 
-        let dt = e.originalEvent.deltaY;
-
-        if (dt > 1) {
-            $('.header .gnb').addClass('active')
-        } else {
-            $('.header .gnb').removeClass('active')
-        }
-
-    })
 });

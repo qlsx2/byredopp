@@ -11,16 +11,17 @@
     border-bottom: 1px solid #ddd;
 }
 
-
 .header .inner {
     position: relative;
 }
+
 
 .header .inner .top {
     height: 80px;
     display: flex;
     align-items: center;
 }
+
 
 .header .inner h1 {
     position: absolute;
@@ -404,7 +405,7 @@
 
 .main_best {
     position: relative;
-    height: calc(100vh - 120px);
+
     text-align: center;
     padding: 120px 0;
 }
